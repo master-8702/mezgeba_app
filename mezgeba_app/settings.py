@@ -41,6 +41,16 @@ INSTALLED_APPS = [
     'rest_framework',
 ]
 
+REST_FRAMEWORK = {
+   
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+       
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+    
+}
+
+
 # here we are changing the built in user model with our custome user model
 AUTH_USER_MODEL = 'accounts.User'
 

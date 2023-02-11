@@ -26,6 +26,6 @@ urlpatterns = [
     path('api/individual_registrar/', include('individual_registrar.api.urls')),
 
     # the following two paths (urls) are from the simple jwt package to handle getting token and refreshing token operations 
-    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),        # to get a new access and refresh token by providnig email & password
+    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),       # to get a new access token by providing refresh token
 ]

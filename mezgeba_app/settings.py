@@ -38,8 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts',
+    
+    # installed by
     'rest_framework',
+
+    # my apps
+    'accounts',
+    'individual_registrar'
 ]
 
 # here we can change rest framework settings

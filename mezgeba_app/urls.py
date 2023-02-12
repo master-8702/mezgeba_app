@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/account/', include('accounts.api.urls')),
     path('api/individual_registrar/', include('individual_registrar.api.urls')),
+    path('api/company_registrar/', include('company_registrar.api.urls')),
 
     # the following two paths (urls) are from the simple jwt package to handle getting token and refreshing token operations 
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),        # to get a new access and refresh token by providnig email & password

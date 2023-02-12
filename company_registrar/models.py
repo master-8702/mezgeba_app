@@ -22,3 +22,7 @@ class CompanyRegistrar(models.Model):
     contact_person_address_city = models.CharField(max_length=255)
     number_of_employees = models.CharField(max_length=255)
 
+
+    def __str__(self):
+        return self.company_name + ' >>> ' + self.company_field + ' >>> ' +  str(self.user)
+

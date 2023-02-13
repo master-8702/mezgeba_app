@@ -7,6 +7,7 @@ from django.core.validators import RegexValidator
 
 class IndividualRegistrar(models.Model):
 
+    # a choice for gender field
     GENDER_CHOICE = (('male','Male'), ('female', 'Female'))
     # here we are creating regex (regular expression) validator fro our phone field to accepty numbers only
     # with a maximum of fiften (15) digit

@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     # my apps
     'accounts',
     'individual_registrar',
-    'company_registrar'
+    'company_registrar',
+    'registrant'
 ]
 
 # here we can change rest framework settings
